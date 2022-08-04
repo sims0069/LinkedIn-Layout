@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 'Arial';
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: #f3f2ef;
+}
+
+nav {
+    background-color: #fff;
+    height: 53px;
+    position: sticky;
+    top: 0px;
+    border-bottom: #e7e1e1;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 225px 1fr 315px;
+    padding: 20px 10%;
+    gap: 20px;
+}
+
+
+main aside > * {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #e7e1e1;
+}
+
+main section > * {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #e7e1e1;
+}
+
+#left {
+    display: grid;
+    grid-template-rows: 357px 432px;
+    gap: 10px;
+}
+
+#right {
+    display: grid;
+    grid-template-rows: 374px 394px;
+    gap: 10px;
+}
+
+#timeline {
+    display: grid;
+    grid-template-rows: 116px;
+    gap: 8px;
+}
+
+#timeline .feeds {
+    padding: 20px;
+}
+
+#timeline .feeds .post {
+    height: 400px;
+    border-radius: 10px;
+    background-color: #000;
+    margin-bottom: 15px;
+}
+
+#left .recents, #right .ads {
+    position: sticky;
+    top: 73px;
+    /* top = height of nav bar + padding of the main  */
+}
